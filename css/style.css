@@ -1,3 +1,7 @@
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -8,5 +12,21 @@ body {
 }
 
 .lirycs-container {
-	margin: 50px 30% 0 30%;
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .lirycs-container {
+		width: 100%;
+		padding: 70px 60px 0 60px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+  .lirycs-container {
+		padding: 70px 24px 0 24px;
+	}
 }
